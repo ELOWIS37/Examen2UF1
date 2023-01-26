@@ -19,6 +19,4 @@ class CatalegViewModel {
         cataleg = Repositori.getCataleg(context)
         return cataleg
     }
-
-
 }

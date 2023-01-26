@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/catalegFragment">
 
+    <fragment
+        android:id="@+id/catalegFragment"
+        android:name="com.elowis.examen2uf1.ui.CatalegFragment"
+        android:label="fragment_cataleg"
+        tools:layout="@layout/fragment_cataleg" >
+        <action
+            android:id="@+id/action_catalegFragment_to_insertCatalegFragment"
+            app:destination="@id/insertCatalegFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertCatalegFragment"
+        android:name="com.elowis.examen2uf1.ui.InsertCatalegFragment"
+        android:label="InsertCatalegFragment" />
 </navigation>

@@ -14,7 +14,7 @@ import com.elowis.examen2uf1.model.Cataleg
 
 abstract class CatalegDatabase : RoomDatabase() {
 
-    abstract fun CatalegDao(): CatalegDao
+    abstract fun catalegDao(): CatalegDao
 
     companion object {
 
